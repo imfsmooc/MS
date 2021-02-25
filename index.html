@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="js/flexible.js"></script>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+</head>
+<body>
+	<section class="wrap">
+		<header class="header">我的面试法宝</header>
+		<nav class="nav">
+			<a href="#" class="items">
+				<img src="icons/icon1.png">
+				<span>HR面试</span>
+			</a>
+			<a href="#" class="items">
+				<img src="icons/icon2.png">
+				<span>笔试</span>
+			</a>
+			<a href="#" class="items">
+				<img src="icons/icon3.png">
+				<span>技术面试</span>
+			</a>
+			<a href="#" class="items">
+				<img src="icons/icon4.png">
+				<span>模拟面试</span>
+			</a>
+			<a href="#" class="items">
+				<img src="icons/icon5.png">
+				<span>面试技巧</span>
+			</a>
+			<a href="#" class="items">
+				<img src="icons/icon6.png">
+				<span>薪资查询</span>
+			</a>
+			
+		</nav>
+		<!-- go模块 -->
+		<section class="go">
+			<img src="images/go.png">
+		</section>
+	</section>
+	<!-- 就业指导模块 -->
+	<section class="content">
+		<!-- 头部 -->
+		<div class="con-hd">
+			<h4 class="con-1">
+				<!-- <img src="icons/i2.png"> -->
+			就业指导
+			</h4>
+			<a href="#" class="more">更多>></a>
+		</div>
+		<!-- 轮播图 -->
+		<div class="get-job-focus">
+			<!-- Swiper -->
+			<div class="swiper-container get-job-fo">
+			    <div class="swiper-wrapper">
+			      <div class="swiper-slide">
+			      	<a href="#"><img src="images/pic.png" alt=""></a>
+			      	<p>老师交你应对面试技巧</p>
+			      </div>
+			      <div class="swiper-slide">
+			      	<a href="#"><img src="images/ldh.jpg" alt=""></a>
+			      	<p>老师交你应对面试技巧</p>
+			      </div>
+			      <div class="swiper-slide">
+			      	<a href="#"><img src="images/3.jpg" alt=""></a>
+			      	<p>老师交你应对面试技巧</p>
+			      </div>
+			    </div>
+			</div>
+			 <!-- Add Arrows  根据需求把箭头拿到container外-->
+		    <div class="swiper-button-next"></div>
+		    <div class="swiper-button-prev"></div>
+		    
+		</div>
+	</section>
+	<!-- 充电学习模块 -->
+	<section class="content study-con">
+		<!-- 头部 -->
+		<div class="con-hd">
+			<h4 class="con-2">
+				<!-- <img src="icons/i2.png"> -->
+			充电学习
+			</h4>
+			<a href="#" class="more">更多>></a>
+		</div>
+		<!-- 充电学习轮播图 -->
+		<div class="study">
+			 <!-- Swiper -->
+		    <div class="swiper-container study-fo">
+			    <div class="swiper-wrapper">
+			      <div class="swiper-slide">
+			      	<img src="images/pic1.png">
+			      	<h5>说地道英语，告别中式英语</h5>
+			      	<p>153人学习</p>
+			      </div>
+			      <div class="swiper-slide">
+			      	<img src="images/pic2.png">
+			      	<h5>说地道英语，告别中式英语</h5>
+			      	<p>153人学习</p>
+			      </div>
+			      <div class="swiper-slide">
+			      	<img src="images/pic1.png">
+			      	<h5>说地道英语，告别中式英语</h5>
+			      	<p>153人学习</p>
+			      </div>
+			      <div class="swiper-slide">
+			      	<img src="images/pic2.png">
+			      	<h5>说地道英语，告别中式英语</h5>
+			      	<p>153人学习</p>
+			      </div>
+			      
+		    </div>
+    
+  </div>
+		</div>
+		
+	</section>
+
+	<!-- 底部 -->
+	<footer class="footer">
+		<a href="#">
+			<img src="icons/home.png">
+			<p>首页</p>
+		</a>
+		<a href="#">
+			<img src="icons/ms.png">
+			<p>技术面试</p>
+		</a>
+		<a href="#">
+			<img src="icons/net.png">
+			<p>模拟面试</p>
+		</a>
+		<a href="#">
+			<img src="icons/user.png">
+			<p>我的主页</p>
+		</a>
+		
+	</footer>
+	
+	<script>
+    // 第一个函数是 就业轮播图
+    (function () {
+    var swiper = new Swiper('.get-job-fo', {
+    	// 能够显示的slide 的个数
+      slidesPerView: 2,
+      // 每个之间的距离
+      spaceBetween: 30,
+      // 最大的图在中间显示，默认的是在左边显示
+	  centeredSlides: true,
+	  loop: true,
+     // 添加左右箭头
+     navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+    }) ();
+
+    // 第二个函数 充电学习轮播图
+    (function () {
+    	// 如果有多个轮播图，应该修改一下swiper-container的名称
+    	var swiper = new Swiper('.study-fo', {
+      slidesPerView: 2.4,
+      spaceBetween: 20,
+      
+    });
+    })();
+  </script>
+</body>
+</html>
